@@ -4,44 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <header class="hero">
         <div class="container">
-            <h1>Mohamed Razil O.S</h1>
-            <p class="subtitle">Full Stack Developer | Student</p>
-            <p>1st Year Bca Cloud computing Student</p>
+            <p class="greeting">Hi, my name is</p>
+            <h1 class="gradient-text">[ INSERT YOUR NAME ]</h1>
+            <p class="subtitle">Cloud Computing Student & Full-Stack Developer</p>
+            <p class="bio">I build modern web and mobile applications, focusing on clean code and great user experiences.</p>
         </div>
     </header>
 
-    <section class="container">
-        <h2>My Skills</h2>
+    <section class="container section-box">
+        <h2>Tech Stack</h2>
         <div class="skills-grid">
-            <div class="skill-card">HTML & CSS</div>
+            <div class="skill-card">HTML5 & CSS3</div>
             <div class="skill-card">JavaScript</div>
             <div class="skill-card">Node.js</div>
-            <div class="skill-card">python</div>
-            <div class="skill-card">C++</div>
-            <div class="skill-card">flutter</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Flutter</div>
+            <div class="skill-card">Git & GitHub</div>
         </div>
     </section>
 
-    <section class="container">
-        <h2>Connect With Me</h2>
+    <section class="container section-box">
+        <h2>Let's Connect</h2>
         <div class="links-grid">
-            <a href="https://github.com/R3lix" target="_blank" class="social-btn github">GitHub</a>
-            <a href="https://www.linkedin.com/in/mohamed-razil-o-s-18b013345" target="_blank" class="social-btn linkedin">LinkedIn</a>
-           
+            <a href="[ YOUR GITHUB URL ]" target="_blank" class="social-btn github">GitHub</a>
+            <a href="[ YOUR LINKEDIN URL ]" target="_blank" class="social-btn linkedin">LinkedIn</a>
+            <a href="[ YOUR INSTAGRAM URL ]" target="_blank" class="social-btn instagram">Instagram</a>
         </div>
     </section>
 
-    <section class="container">
-        <h2>Backend Connection Test</h2>
-        <p>Click the button below to test your Node.js backend.</p>
-        <button id="test-btn">Ping Backend</button>
-        <p id="response-msg" style="margin-top: 10px; font-weight: bold;"></p>
+    <section class="container section-box">
+        <h2>System Status</h2>
+        <p class="backend-desc">Check if the Node.js API server is running.</p>
+        <button id="test-btn" class="primary-btn">Ping Server</button>
+        <div id="response-msg" class="response-box hidden"></div>
     </section>
 
     <script src="script.js"></script>
