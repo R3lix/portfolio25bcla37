@@ -1,19 +1,18 @@
-// Wait for the button to be clicked
 document.getElementById('test-btn').addEventListener('click', async () => {
     
     const displayElement = document.getElementById('response-msg');
-    displayElement.innerText = "Loading...";
+    displayElement.classList.remove('hidden'); // Reveal the box
+    displayElement.innerText = "Connecting to server...";
+    displayElement.style.color = "#94a3b8"; // Gray loading text
 
     try {
-        // This fetches data from your Node.js backend
         const response = await fetch('/api/index'); 
         const data = await response.json();
         
-        // Display the message from the backend
         displayElement.innerText = "Success: " + data.message;
-        displayElement.style.color = "green";
+        displayElement.style.color = "#4ade80"; // Green success text
     } catch (error) {
         displayElement.innerText = "Error: Could not connect to backend.";
-        displayElement.style.color = "red";
+        displayElement.style.color = "#f87171"; // Red error text
     }
 });
